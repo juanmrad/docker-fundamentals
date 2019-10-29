@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+
+set -eu
+
+ROOT="$(cd "$(dirname "$0")"/../ && pwd)"
+
+. "$ROOT"/bin/lib/images.sh
+
+docker run \
+    -it \
+    --rm \
+    -w /app \
+    -v "$(pwd)":/app \
+    -v ~/.cache:/home/user/.cache \
+    -v ~/.gitconfig:/home/user/.gitconfig \
+    $NODE_IMAGE \
+    npm "$@"
