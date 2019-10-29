@@ -1,0 +1,15 @@
+{
+  "name": "docker_fundamentals_app",
+  "version": "1.0.0",
+  "description": "Node.js on Docker",
+  "author": "Juan Mrad <juansmrad@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "homepage": "https://github.com/juanmrad/docker-fundamentals#readme",
+  "repository": "git+https://github.com/juanmrad/docker-fundamentals.git"
+}
